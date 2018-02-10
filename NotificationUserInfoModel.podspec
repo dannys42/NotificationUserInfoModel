@@ -29,6 +29,7 @@ This pod provides a simple protocol to make it easier to work with NotificationC
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '4.0'
 
   s.source_files = 'Classes/**/*'
   
