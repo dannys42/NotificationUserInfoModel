@@ -9,16 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var label: UILabel!
+    
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewWillAppear(_ animated: Bool) {
+        let noteCenter = NotificationCenter.default
+        
+        noteCenter.addObserver(self, selector: #selector(progressDidUpdate(_:)), name: .ExampleProgress, object: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        let noteCenter = NotificationCenter.default
+        
+        noteCenter.removeObserver(self)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc public func progressDidUpdate(_ note: Notification) {
+        guard let progressModel = ProgressNoteModel(note: note) else { return }
+ 
+        DispatchQueue.main.async {
+            self.progressView.progress = progressModel.progress
+            self.label.text = progressModel.stage
+        }
     }
-
 }
 

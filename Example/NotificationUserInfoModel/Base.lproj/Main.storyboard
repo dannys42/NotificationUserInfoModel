@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +21,51 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CLU-dS-VOy">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Zr-vq-GiI">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="288.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <progressView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lv2-Ue-qVG">
+                                        <rect key="frame" x="0.0" y="304.5" width="343" height="2"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh0-SL-W8R">
+                                        <rect key="frame" x="150.5" y="322.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsO-EA-IbR">
+                                        <rect key="frame" x="0.0" y="359" width="343" height="288"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="lv2-Ue-qVG" secondAttribute="trailing" id="1Cl-P9-0qH"/>
+                                    <constraint firstItem="DsO-EA-IbR" firstAttribute="height" secondItem="1Zr-vq-GiI" secondAttribute="height" id="TTg-j2-k6Z"/>
+                                    <constraint firstAttribute="leadingMargin" secondItem="lv2-Ue-qVG" secondAttribute="leading" id="zeE-vs-mHN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CLU-dS-VOy" secondAttribute="bottom" id="Ymc-mh-02Z"/>
+                            <constraint firstItem="CLU-dS-VOy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="aik-l7-g3R"/>
+                            <constraint firstItem="CLU-dS-VOy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="ktZ-6M-9ut"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CLU-dS-VOy" secondAttribute="trailing" id="unl-m6-kOO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="dh0-SL-W8R" id="ph7-XM-F0l"/>
+                        <outlet property="progressView" destination="lv2-Ue-qVG" id="gEY-T0-wZ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
