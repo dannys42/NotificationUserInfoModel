@@ -12,24 +12,24 @@ public protocol NotificationUserInfoSerializer {
 }
 
 public protocol NotificationUserInfoDeserializer {
-    init?(userInfo: [String:Any])
-    init?(userInfo: [AnyHashable:Any])
-    init?(userInfo: [AnyHashable:Any]?)
-    init?(note: Notification)
+    init?(_ userInfo: [String:Any])
+    init?(_ userInfo: [AnyHashable:Any])
+    init?(_ userInfo: [AnyHashable:Any]?)
+    init?(_ note: Notification)
 }
 
 public extension NotificationUserInfoDeserializer {
-    init?(userInfo: [AnyHashable:Any]?) {
+    init?(_ userInfo: [AnyHashable:Any]?) {
         guard let userInfo = userInfo else { return nil }
         
-        self.init(userInfo: userInfo)
+        self.init(userInfo)
     }
-    init?(userInfo: [AnyHashable:Any]) {
+    init?(_ userInfo: [AnyHashable:Any]) {
         guard let userInfo = userInfo as? [String:Any] else { return nil }
-        self.init(userInfo: userInfo)
+        self.init(userInfo)
     }
-    init?(note: Notification) {
-        self.init(userInfo: note.userInfo)
+    init?(_ note: Notification) {
+        self.init(note.userInfo)
     }
 }
 

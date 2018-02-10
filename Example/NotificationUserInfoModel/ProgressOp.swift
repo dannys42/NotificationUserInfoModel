@@ -14,6 +14,7 @@ class ProgressOp: Operation {
             var progress: Float = 0
             var stage: String = "n/a"
             
+            // Do something a little more interested to show off the notification userInfo model
             repeat {
                 progress += 0.1
                 if progress < 0.1 {
@@ -39,6 +40,7 @@ class ProgressOp: Operation {
         let noteCenter = NotificationCenter.default
         
         let progressModel = ProgressNoteModel(progress: progress, stage: stage)
+        // A convenience method is provided so you can simply pass the model as your userInfo
         noteCenter.post(name: .ExampleProgress, object: nil, userInfo: progressModel)
     }
 }

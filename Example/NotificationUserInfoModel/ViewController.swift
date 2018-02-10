@@ -26,7 +26,9 @@ class ViewController: UIViewController {
     }
 
     @objc public func progressDidUpdate(_ note: Notification) {
-        guard let progressModel = ProgressNoteModel(note: note) else { return }
+        // Notification handler can have a simple guard to ensure the proper data type
+        // A convenience method is provided so you can simply pass the Notification and the userInfo will be tested and extracted if possible
+        guard let progressModel = ProgressNoteModel(note) else { return }
  
         DispatchQueue.main.async {
             self.progressView.progress = progressModel.progress
