@@ -1,7 +1,7 @@
 # NotificationUserInfoModel
 A simple protocol to interface with NotificationCenter
 
-[![CI Status](http://img.shields.io/travis/danny@dannysung.com/NotificationUserInfoModel.svg?style=flat)](https://travis-ci.org/danny@dannysung.com/NotificationUserInfoModel)
+[![CI Status](http://img.shields.io/travis/dannys42/NotificationUserInfoModel.svg?style=flat)](https://travis-ci.org/dannys42/NotificationUserInfoModel)
 [![Version](https://img.shields.io/cocoapods/v/NotificationUserInfoModel.svg?style=flat)](http://cocoapods.org/pods/NotificationUserInfoModel)
 [![License](https://img.shields.io/cocoapods/l/NotificationUserInfoModel.svg?style=flat)](http://cocoapods.org/pods/NotificationUserInfoModel)
 [![Platform](https://img.shields.io/cocoapods/p/NotificationUserInfoModel.svg?style=flat)](http://cocoapods.org/pods/NotificationUserInfoModel)
