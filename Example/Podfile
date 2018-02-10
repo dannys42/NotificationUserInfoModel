@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NotificationUserInfoModel_Example' do
+  pod 'NotificationUserInfoModel', :path => '../'
+
+  target 'NotificationUserInfoModel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

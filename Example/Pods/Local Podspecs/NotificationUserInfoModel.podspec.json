@@ -1,0 +1,22 @@
+{
+  "name": "NotificationUserInfoModel",
+  "version": "0.1.0",
+  "summary": "A short description of NotificationUserInfoModel.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/danny@dannysung.com/NotificationUserInfoModel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "danny@dannysung.com": "danny@dannysung.com"
+  },
+  "source": {
+    "git": "https://github.com/danny@dannysung.com/NotificationUserInfoModel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module NotificationUserInfoModel {
+  umbrella header "NotificationUserInfoModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

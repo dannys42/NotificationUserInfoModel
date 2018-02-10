@@ -1,0 +1,16 @@
+PODS:
+  - NotificationUserInfoModel (0.1.0)
+
+DEPENDENCIES:
+  - NotificationUserInfoModel (from `../`)
+
+EXTERNAL SOURCES:
+  NotificationUserInfoModel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NotificationUserInfoModel: 3de99be9d0437173cc2fe6fedb55190983ea1ace
+
+PODFILE CHECKSUM: ded865efd4c5be130f3e281ee2c6073d7c646c38
+
+COCOAPODS: 1.4.0
