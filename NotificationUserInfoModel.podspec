@@ -25,7 +25,7 @@ This pod provides a simple protocol to make it easier to work with NotificationC
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'danny@dannysung.com' => 'danny@dannysung.com' }
-  s.source           = { :git => 'https://github.com/dannys42/NotificationUserInfoModel.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dannys42/NotificationUserInfoModel.git', :tag => 'release/'+s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
