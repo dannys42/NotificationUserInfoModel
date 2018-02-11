@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/dannys42/NotificationUserInfoModel.git",
-    "tag": "0.1.0"
+    "tag": "release/0.1.0"
   },
   "platforms": {
     "ios": "8.0"

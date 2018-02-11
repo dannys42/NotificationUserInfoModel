@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  NotificationUserInfoModel: 9690cfe61e96877bb64cbe7b890965c040a9fec4
+  NotificationUserInfoModel: ec375b5f489bbbadbfe2d2a45a8d79c82d10f413
 
 PODFILE CHECKSUM: 35749b5cf3fd308008a796408afb7279674122e9
 
