@@ -15,7 +15,7 @@ public extension NotificationCenter {
 
     ///   - anObject: The object posting the notification.
     ///   - model: Optional information about the the notification in the form o fan NotificationUserInfoModel.
-    public func post(name aName: NSNotification.Name,
+    func post(name aName: NSNotification.Name,
               object anObject: Any?,
               userInfo model: NotificationUserInfoSerializer? = nil)
     {
